@@ -19,6 +19,7 @@
 
 /* Begin PBXFileReference section */
 		0A6C898A6E2363FFF39375AA /* Pods-ChatSDK Demo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ChatSDK Demo.release.xcconfig"; path = "Pods/Target Support Files/Pods-ChatSDK Demo/Pods-ChatSDK Demo.release.xcconfig"; sourceTree = "<group>"; };
+		2B8958D31E68ED4F008EBB2C /* Profile.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Profile.storyboard; path = ../ChatUI/Interface/Profile.storyboard; sourceTree = "<group>"; };
 		369A95ECCEDC395C4185D9A1 /* Pods_ChatSDK_Demo.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ChatSDK_Demo.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		AC7BD9971E0874B400C785EE /* ChatSDK Demo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "ChatSDK Demo.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		AC7BD99B1E0874B400C785EE /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
@@ -58,6 +59,7 @@
 		AC7BD98E1E0874B400C785EE = {
 			isa = PBXGroup;
 			children = (
+				2B8958D31E68ED4F008EBB2C /* Profile.storyboard */,
 				AC7BD9991E0874B400C785EE /* ChatSDK Demo */,
 				AC7BD9981E0874B400C785EE /* Products */,
 				AC0BCADF675425D258C8F005 /* Pods */,
@@ -140,7 +142,7 @@
 				TargetAttributes = {
 					AC7BD9961E0874B400C785EE = {
 						CreatedOnToolsVersion = 8.2;
-						DevelopmentTeam = P7RPLLCMTA;
+						DevelopmentTeam = 648G6J36QZ;
 						ProvisioningStyle = Automatic;
 					};
 				};
@@ -220,7 +222,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
 			showEnvVarsInLog = 0;
 		};
 /* End PBXShellScriptBuildPhase section */
@@ -351,7 +353,7 @@
 			baseConfigurationReference = C1E0C00DE6291F2AF340F82F /* Pods-ChatSDK Demo.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				DEVELOPMENT_TEAM = P7RPLLCMTA;
+				DEVELOPMENT_TEAM = 648G6J36QZ;
 				INFOPLIST_FILE = "ChatSDK Demo/Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				PRODUCT_BUNDLE_IDENTIFIER = "co.deluge.Chat-SDK";
@@ -364,7 +366,7 @@
 			baseConfigurationReference = 0A6C898A6E2363FFF39375AA /* Pods-ChatSDK Demo.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				DEVELOPMENT_TEAM = P7RPLLCMTA;
+				DEVELOPMENT_TEAM = 648G6J36QZ;
 				INFOPLIST_FILE = "ChatSDK Demo/Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				PRODUCT_BUNDLE_IDENTIFIER = "co.deluge.Chat-SDK";
