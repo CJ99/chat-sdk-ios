@@ -63,7 +63,7 @@ Pod::Spec.new do |s|
     #  'ChatFirebaseAdapter' => ['FirebaseAdapter/Assets/**/*']
     #}
 
-    firebase.frameworks = 'CoreData', 'SystemConfiguration', 'Security', 'MobileCoreServices', 'CFNetwork', 'MessageUI', 'Accounts', 'Social', 'CoreLocation'
+    firebase.frameworks = 'CoreData', 'SystemConfiguration', 'Security', 'MobileCoreServices', 'CFNetwork', 'MessageUI', 'Accounts', 'Social', 'CoreLocation', 'AdSupport'
 
     firebase.dependency 'ChatSDK/Core'
     firebase.dependency 'Firebase/Core'

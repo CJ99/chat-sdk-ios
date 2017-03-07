@@ -14,7 +14,12 @@
 @implementation BFirebaseNetworkAdapter
 
 -(id) init {
+    
     if((self = [super init])) {
+        
+        // Configure app for Facebook login
+        [FIRApp configure];
+        
         self.core = [[BFirebaseCoreHandler alloc] init];
         self.upload = [[BFirebaseUploadHandler alloc] init];
         self.auth = [[BFirebaseAuthenticationHandler alloc] init];

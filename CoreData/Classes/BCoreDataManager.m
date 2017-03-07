@@ -157,8 +157,8 @@ static BCoreDataManager * manager;
     
     if (!_managedObjectModel) {
         
-        NSBundle * bundle = [NSBundle bundleWithPath:[[NSBundle mainBundle] pathForResource:@"ChatCoreData" ofType:@"bundle"]];
-
+        NSBundle * bundle = [NSBundle bundleWithPath:[[NSBundle mainBundle] pathForResource:@"Frameworks/ChatSDK.framework/ChatCoreData" ofType:@"bundle"]];
+        
         /*
         NSString *path1 = [bundle resourcePath];
         NSFileManager *fm = [NSFileManager defaultManager];

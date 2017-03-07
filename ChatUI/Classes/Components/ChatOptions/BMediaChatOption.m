@@ -25,16 +25,16 @@
     NSString * image;
     switch (_type) {
         case bPictureTypeAlbumImage:
-            image = @"ChatUI.bundle/icn_60_gallery.png";
+            image = @"Frameworks/ChatSDK.framework/ChatUI.bundle/icn_60_gallery.png";
             break;
         case bPictureTypeAlbumVideo:
-            image = @"ChatUI.bundle/icn_60_video_clip.png";
+            image = @"Frameworks/ChatSDK.framework/ChatUI.bundle/icn_60_video_clip.png";
             break;
         case bPictureTypeCameraImage:
-            image = @"ChatUI.bundle/icn_60_camera.png";
+            image = @"Frameworks/ChatSDK.framework/ChatUI.bundle/icn_60_camera.png";
             break;
         case bPictureTypeCameraVideo:
-            image = @"ChatUI.bundle/icn_60_camera.png";
+            image = @"Frameworks/ChatSDK.framework/ChatUI.bundle/icn_60_camera.png";
             break;
     }
 
