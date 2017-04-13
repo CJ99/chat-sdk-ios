@@ -70,9 +70,11 @@
 //        [thread.model markRead];
         [[BNetworkManager sharedManager].a.readReceipt markRead:thread.model];
         
-        UITapGestureRecognizer * titleTapRecognizer = [[UITapGestureRecognizer alloc] initWithTarget:self action:@selector(loadUsersView)];
-        [self.navigationItem.titleView addGestureRecognizer:titleTapRecognizer];
-
+        // When a user taps the title bar we want to know to show the options screen
+        if ([BSettingsManager userChatInfoEnabled]) {
+            UITapGestureRecognizer * titleTapRecognizer = [[UITapGestureRecognizer alloc] initWithTarget:self action:@selector(navigationBarTapped)];
+            [self.navigationItem.titleView addGestureRecognizer:titleTapRecognizer];
+        }
     }
     return self;
 }

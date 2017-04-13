@@ -135,7 +135,9 @@
     [[NSUserDefaults standardUserDefaults] setObject:@(badge) forKey:bMessagesBadgeValueKey];
     [[NSUserDefaults standardUserDefaults] synchronize];
     
-    [UIApplication sharedApplication].applicationIconBadgeNumber = badge;
+    if ([BSettingsManager appBadgeEnabled]) {
+        [UIApplication sharedApplication].applicationIconBadgeNumber = badge;
+    }
 }
 
 -(NSBundle *) uiBundle {
